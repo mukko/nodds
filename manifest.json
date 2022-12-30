@@ -12,7 +12,7 @@
     "css": ["race/design.css"]
   },
   {
-    "matches": ["https://race.netkeiba.com/odds/index.html?type=b7*"],
+    "matches": ["https://race.netkeiba.com/odds/index.html?type=*"],
     "js": ["odds/main.js"],
     "css": ["odds/design.css"]
   }
