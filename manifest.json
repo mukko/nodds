@@ -15,6 +15,10 @@
     "matches": ["https://race.netkeiba.com/odds/index.html?type=*"],
     "js": ["odds/main.js"],
     "css": ["odds/design.css"]
+  },
+  {
+    "matches": ["https://race.netkeiba.com/race/shutuba_past.html?race_id=*"],
+    "js": ["past5/main.js"]
   }
   ]
 }
