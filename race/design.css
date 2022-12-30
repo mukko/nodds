@@ -1,0 +1,19 @@
+/* オッズ背景 */
+.Txt_R.Popular {
+  background-color: #EAEAEA !important;
+}
+
+/* オッズ文字色 */
+.Txt_R.Popular span {
+  color: #000000 !important;
+}
+
+/* theader オッズ */
+.Popular {
+  background-color: #EAEAEA !important;
+}
+
+/* 人気背景 */
+.Popular_Ninki {
+  background-color: #EAEAEA !important;
+}
