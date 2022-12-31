@@ -1,0 +1,4 @@
+/* 近5走オッズ文字色 */
+div table.Shutuba_Past5_Table tr.HorseList td.Horse_Info .Popular span.Odds_Ninki, div table.Shutuba_Past5_Table tr.HorseList td.Horse_Info .Popular span.Odds_Ninki + span {
+  color: #000000 !important;
+}

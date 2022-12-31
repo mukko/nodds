@@ -7,18 +7,19 @@
   "action": {},
 
   "content_scripts": [{
-    "matches": ["https://race.netkeiba.com/race/shutuba.html?race_id=*"],
+    "matches": ["https://race.netkeiba.com/race/shutuba.html*"],
     "js": ["race/main.js"],
     "css": ["race/design.css"]
   },
   {
-    "matches": ["https://race.netkeiba.com/odds/index.html?type=*"],
+    "matches": ["https://race.netkeiba.com/odds/index.html*"],
     "js": ["odds/main.js"],
     "css": ["odds/design.css"]
   },
   {
-    "matches": ["https://race.netkeiba.com/race/shutuba_past.html?race_id=*"],
-    "js": ["past5/main.js"]
+    "matches": ["https://race.netkeiba.com/race/shutuba_past.html*"],
+    "js": ["past5/main.js"],
+    "css": ["past5/design.css"]
   }
   ]
 }

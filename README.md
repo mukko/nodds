@@ -1,8 +1,8 @@
 # Nodds
 
-This is Chrome extension that hides netkeiba odds.
-I am NOT responsible for any disadvantages due to personal creation.
-Please use at your own risk.
+This is Chrome extension that hides netkeiba odds.  
+I am NOT responsible for any disadvantages due to personal creation.  
+Please use at your own risk.  
 
 # How to install
 
