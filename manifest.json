@@ -1,25 +1,31 @@
 {
   "manifest_version": 3,
   "name": "Nodds",
-  "description": "update odds to '--' at netkeiba",
+  "description": "update odds to '☆' at netkeiba",
   "version": "1.0.0",
-
-  "action": {},
-
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["https://race.netkeiba.com/"],
+  "action": {
+    "default_title": "設定",
+    "default_popup": "popup.html"
+  },
   "content_scripts": [{
     "matches": ["https://race.netkeiba.com/race/shutuba.html*"],
     "js": ["race/main.js"],
-    "css": ["race/design.css"]
+    "run_at": "document_end",
+    "all_frames": true
   },
   {
     "matches": ["https://race.netkeiba.com/odds/index.html*"],
     "js": ["odds/main.js"],
-    "css": ["odds/design.css"]
+    "run_at": "document_end",
+    "all_frames": true
   },
   {
     "matches": ["https://race.netkeiba.com/race/shutuba_past.html*"],
     "js": ["past5/main.js"],
-    "css": ["past5/design.css"]
+    "run_at": "document_end",
+    "all_frames": true
   }
   ]
 }

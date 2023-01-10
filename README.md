@@ -1,12 +1,31 @@
 # Nodds
 
-This is Chrome extension that hides netkeiba odds.  
-I am NOT responsible for any disadvantages due to personal creation.  
-Please use at your own risk.  
+netkeibaオッズを非表示にするchrome extensionです。  
+これによる不利益は一切責任を負いません。自己責任でご利用ください。  
 
-# How to install
+![サンプル画像](/assets/sample.png)
 
-1. Download this repository.
-1. Install Chrome.
-  1. select 'loading unpackaged extensions'.
-  1. select downloaded directory.
+# インストール方法
+
+1. このリポジトリのリリースページからzipをダウンロードする
+1. 解凍後のディレクトリをchromeに読み込ませる
+  1. chromeで `chrome://extensions/` を開く
+  1. 右上の「デベロッパーモード」を `ON` にする
+  1. 左上の「パッケージ化していない拡張機能」をクリック
+  1. 解凍したディレクトリを選択する
+  
+# 使い方
+
+現在は以下のページに対応しています。  
+
+- 出馬表
+- 出馬表 > 馬柱(5走)
+
+以下のページは対応中です。購入形式を変更すると見えてしまいます。  
+
+- オッズ・購入
+
+## 表示・非表示設定
+
+拡張機能のアイコンをクリックすると設定ポップアップが出ます。  
+オッズ隠しを `有効にしたいページにチェック` を入れて `Save` すると、それ以降のページ読み込み時に適用されるようになります。  

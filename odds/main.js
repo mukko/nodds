@@ -1,12 +1,18 @@
 'use strict';
 
+// TODO 読み込み時は上書きされるが、購入形式のタブを切り替えると全く隠さなくなる
 const hide_odds_odds = () => {
-  const odds = document.querySelectorAll('tr > td.Odds > div > span');
-  console.log(odds);
-  for (let i = 0; i < odds.length; i++) {
-    odds[i].innerHTML = '☆☆☆';
+  const oddsD = document.querySelectorAll('td.Odds');
+
+  for (let i = 0; i < oddsD.length; i++) {
+    oddsD[i].innerHTML = '☆☆☆';
+    oddsD[i].style.color = '#000000';
   }
 }
 
-window.addEventListener('load', () => hide_odds_odds(), false);
-window.addEventListener('click', () => hide_odds_odds());
+chrome.storage.local.get(["odds"], function(value) {
+  if (value.odds) {
+    window.addEventListener('load', () => hide_odds_odds());
+    window.addEventListener('update', () => hide_odds_odds());
+  }
+})
