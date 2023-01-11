@@ -1,5 +1,7 @@
 # Nodds
 
+![icon](/icons/icon128.png)
+
 netkeibaオッズを非表示にするchrome extensionです。  
 これによる不利益は一切責任を負いません。自己責任でご利用ください。  
 
